@@ -1,0 +1,13 @@
+
+{
+  "name": "glory-mc-bot",
+  "version": "1.0.0",
+  "description": "Glory Mc Minecraft AFK Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "latest"
+  }
+}
