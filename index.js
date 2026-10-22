@@ -18,6 +18,21 @@ function startBot() {
     console.log('Glory Mc is online!');
 
     bot.chat('Welcome to Glory MC');
+    
+  setInterval(() => {
+    if (!bot.entity) return;
+
+    bot.setControlState('jump', true);
+    setTimeout(() => {
+      bot.setControlState('jump', false);
+    }, 350);
+
+    bot.setControlState('forward', true);
+    setTimeout(() => {
+      bot.setControlState('forward', false);
+    }, 1000);
+  }, 10000);
+
 
     setInterval(() => {
       if (bot.entity) {
